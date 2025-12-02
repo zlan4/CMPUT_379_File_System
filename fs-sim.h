@@ -1,3 +1,8 @@
+#ifndef FS_SIM_H
+#define FS_SIM_H
+#include <stdint.h>
+#include <stdbool.h>
+
 typedef struct {
     char name[5];         // name of the file/directory
     uint8_t isused_size;  // state of inode and size of the file/directory
@@ -19,3 +24,11 @@ void fs_buff(uint8_t buff[1024]);
 void fs_ls(void);
 void fs_defrag(void);
 void fs_cd(char name[5]);
+
+extern char current_disk_name[1000];
+extern Superblock superblock;
+extern uint8_t buffer[1024];
+extern int current_inode_index;
+extern bool is_mounted;
+
+#endif
