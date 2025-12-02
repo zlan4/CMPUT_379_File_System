@@ -30,5 +30,6 @@ extern Superblock superblock;
 extern uint8_t buffer[1024];
 extern int current_inode_index;
 extern bool is_mounted;
+extern int disk_fd;
 
 #endif
