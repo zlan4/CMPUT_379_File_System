@@ -1,8 +1,14 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/zegDotdy)
+Unix File System Simulator 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Name : Emily Lan
-SID : 1757014
-CCID : zlan4
+The program reads commands from an input file and performs different file system operations (with appropriate error handling where necessary):
+1. C-Create a file, Usage: C <file name> <file size>
+2. D-Delete a file, Usage: D <file name>
+3. R-Read from a file, Usage: R <file name> <block number>
+4. W-Write to a file, Usage: W <file name> <block number>
+5. B-Update the buffer, Usage: B <new buffer characters>
+6. L-List files, Usage: L
+7. O-Defragment the disk, Usage: O
+8. Y-Change the current working directory, Usage: Y <directory name>
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Design Choices
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
